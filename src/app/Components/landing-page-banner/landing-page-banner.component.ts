@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'],
+  selector: 'app-landing-page-banner',
+  templateUrl: './landing-page-banner.component.html',
+  styleUrls: ['./landing-page-banner.component.css'],
 })
-export class NavbarComponent implements OnInit {
+export class LandingPageBannerComponent implements OnInit {
   mapIcon = faGlobeAmericas;
   constructor() {}
 

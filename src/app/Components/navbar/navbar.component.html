@@ -1,1 +1,56 @@
-<p>Navbar Working</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">Natural Foods</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            href="#"
+            aria-current="page"
+            class="nav-link dropdown-toggle"
+            id="navbarDropdownd"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            >Company</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a href="#" class="dropdown-item">Food Quality Checks</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#" class="dropdown-item">About Us</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#" class="dropdown-item">Careers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+      </ul>
+
+      <div class="ml-lg-auto">
+        <a href="#" class="btn btn-primary m-1">Sign In</a>
+        <a href="#" class="btn btn-primary m-1">Sign Up</a>
+      </div>
+      <fa-icon
+        [icon]="mapIcon"
+        class="fa-2x mx-1 text-white d-none d-lg-block"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Locate you address"
+      ></fa-icon>
+    </div>
+  </div>
+</nav>

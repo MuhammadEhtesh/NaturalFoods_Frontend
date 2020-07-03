@@ -1,0 +1,27 @@
+.container-fluid {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-image: url(../../../assets/milk-3.jpg);
+}
+
+#address__input {
+  border-radius: 5rem;
+}
+
+#map-icon-div {
+  cursor: pointer;
+}
+
+.map-icon-div:hover {
+  color: cornflowerblue;
+}
+
+#map__button {
+  border-radius: 0.5rem;
+}
+.btn-outline-success:hover {
+  background-color: cornflowerblue !important;
+}
