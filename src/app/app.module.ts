@@ -9,9 +9,10 @@ import { LandingPageBannerComponent } from './Components/landing-page-banner/lan
 import { DailyDairyWorkComponent } from './Components/daily-dairy-work/daily-dairy-work.component';
 import { MilkCategoriesComponent } from './Components/milk-categories/milk-categories.component';
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
+import { PakCititesComponent } from './Components/pak-citites/pak-citites.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, LandingPageBannerComponent, DailyDairyWorkComponent, MilkCategoriesComponent, StrongboneFillerComponent],
+  declarations: [AppComponent, NavbarComponent, LandingPageBannerComponent, DailyDairyWorkComponent, MilkCategoriesComponent, StrongboneFillerComponent, PakCititesComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
