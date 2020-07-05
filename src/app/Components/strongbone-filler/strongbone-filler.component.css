@@ -1,0 +1,16 @@
+.container-fluid {
+  height: 80vh;
+  background: url(../../../assets/strongbones-fillter.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  height: 500px;
+}
+
+.message {
+  font-family: sans-serif !important;
+  height: 50vh;
+  color: aliceblue;
+}
