@@ -12,9 +12,10 @@ import { StrongboneFillerComponent } from './Components/strongbone-filler/strong
 import { PakCititesComponent } from './Components/pak-citites/pak-citites.component';
 import { TestimonialComponent } from './Components/testimonial/testimonial.component';
 import { AboutComponent } from './Components/about/about.component';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, LandingPageBannerComponent, DailyDairyWorkComponent, MilkCategoriesComponent, StrongboneFillerComponent, PakCititesComponent, TestimonialComponent, AboutComponent],
+  declarations: [AppComponent, NavbarComponent, LandingPageBannerComponent, DailyDairyWorkComponent, MilkCategoriesComponent, StrongboneFillerComponent, PakCititesComponent, TestimonialComponent, AboutComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
