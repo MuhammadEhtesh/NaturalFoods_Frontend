@@ -11,9 +11,10 @@ import { MilkCategoriesComponent } from './Components/milk-categories/milk-categ
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
 import { PakCititesComponent } from './Components/pak-citites/pak-citites.component';
 import { TestimonialComponent } from './Components/testimonial/testimonial.component';
+import { AboutComponent } from './Components/about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, LandingPageBannerComponent, DailyDairyWorkComponent, MilkCategoriesComponent, StrongboneFillerComponent, PakCititesComponent, TestimonialComponent],
+  declarations: [AppComponent, NavbarComponent, LandingPageBannerComponent, DailyDairyWorkComponent, MilkCategoriesComponent, StrongboneFillerComponent, PakCititesComponent, TestimonialComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
