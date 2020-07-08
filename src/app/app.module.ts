@@ -16,6 +16,7 @@ import { SignupOptionsComponent } from './Components/signup-options/signup-optio
 import { CustomerSignupComponent } from './Components/customer-signup/customer-signup.component';
 import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-signup.component';
 import { SigninComponent } from './Components/signin/signin.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SigninComponent } from './Components/signin/signin.component';
     CustomerSignupComponent,
     DairymanSignupComponent,
     SigninComponent,
+    ContactUsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
