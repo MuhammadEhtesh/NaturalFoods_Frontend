@@ -13,6 +13,7 @@ import { DailyDairyWorkComponent } from './Components/daily-dairy-work/daily-dai
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
 import { LandingPageBannerComponent } from './Components/landing-page-banner/landing-page-banner.component';
 import { SignupOptionsComponent } from './Components/signup-options/signup-options.component';
+import { CustomerSignupComponent } from './Components/customer-signup/customer-signup.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SignupOptionsComponent } from './Components/signup-options/signup-optio
     StrongboneFillerComponent,
     LandingPageBannerComponent,
     SignupOptionsComponent,
+    CustomerSignupComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
