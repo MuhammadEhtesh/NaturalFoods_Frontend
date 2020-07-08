@@ -13,6 +13,7 @@ import { MilkCategoriesComponent } from './Components/milk-categories/milk-categ
 import { DailyDairyWorkComponent } from './Components/daily-dairy-work/daily-dairy-work.component';
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
 import { LandingPageBannerComponent } from './Components/landing-page-banner/landing-page-banner.component';
+import { SignupOptionsComponent } from './Components/signup-options/signup-options.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { LandingPageBannerComponent } from './Components/landing-page-banner/lan
     MilkCategoriesComponent,
     StrongboneFillerComponent,
     LandingPageBannerComponent,
+    SignupOptionsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
