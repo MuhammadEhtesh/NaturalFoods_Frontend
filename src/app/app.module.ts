@@ -15,6 +15,7 @@ import { LandingPageBannerComponent } from './Components/landing-page-banner/lan
 import { SignupOptionsComponent } from './Components/signup-options/signup-options.component';
 import { CustomerSignupComponent } from './Components/customer-signup/customer-signup.component';
 import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-signup.component';
+import { SigninComponent } from './Components/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-s
     SignupOptionsComponent,
     CustomerSignupComponent,
     DairymanSignupComponent,
+    SigninComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
