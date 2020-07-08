@@ -1,0 +1,42 @@
+#contact-us {
+  height: 70vh;
+  background-image: url(../../../assets/contact-us/background-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 35rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    height: 35rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    height: 35rem;
+    margin-top: -4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card {
+    height: 30rem;
+    margin-top: -4rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    margin-top: -4rem;
+    height: 30rem;
+  }
+}
