@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a routerLink="/" class="nav-link active">Home</a>
+          <a routerLink="/" routerLinkActive="active" class="nav-link">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -32,19 +32,26 @@
             <li><a href="#" class="dropdown-item">Food Quality Checks</a></li>
             <div class="dropdown-divider"></div>
             <li>
-              <a routerLink="/about" class="dropdown-item">About Us</a>
+              <a
+                routerLink="/about"
+                routerLinkActive="active"
+                class="dropdown-item"
+                >About Us</a
+              >
             </li>
             <div class="dropdown-divider"></div>
             <li><a href="#" class="dropdown-item">Careers</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact Us</a>
+        </li>
         <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
       </ul>
 
       <div class="ml-lg-auto">
         <a href="#" class="btn btn-primary m-1">Sign In</a>
-        <a href="#" class="btn btn-primary m-1">Sign Up</a>
+        <a routerLink="/signupfor" class="btn btn-primary m-1">Sign Up</a>
       </div>
       <fa-icon
         [icon]="mapIcon"
