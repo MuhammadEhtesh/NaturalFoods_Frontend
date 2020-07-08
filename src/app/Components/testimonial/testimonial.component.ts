@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faQuoteLeft, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-testimonial',
@@ -7,8 +6,6 @@ import { faQuoteLeft, faHeart } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./testimonial.component.css'],
 })
 export class TestimonialComponent implements OnInit {
-  faQuoteLeft = faQuoteLeft;
-  faHeart = faHeart;
   constructor() {}
 
   ngOnInit(): void {}

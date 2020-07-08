@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +6,6 @@ import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  mapIcon = faGlobeAmericas;
   constructor() {}
 
   ngOnInit(): void {}

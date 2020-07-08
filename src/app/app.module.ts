@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { PakCititesComponent } from './Components/pak-citites/pak-citites.component';
 import { TestimonialComponent } from './Components/testimonial/testimonial.component';
@@ -29,7 +28,7 @@ import { SignupOptionsComponent } from './Components/signup-options/signup-optio
     LandingPageBannerComponent,
     SignupOptionsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
