@@ -1,3 +1,7 @@
 .nav-link:hover {
   color: white !important;
 }
+
+.fa-globe-americas {
+  cursor: pointer;
+}
