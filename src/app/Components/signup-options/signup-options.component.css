@@ -1,0 +1,48 @@
+.container-fluid {
+  height: calc(100vh - 56px);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container-fluid {
+    margin-top: 1rem;
+  }
+  .card {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    margin-top: 1rem;
+  }
+
+  .card {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    margin-top: 2rem;
+  }
+  .card {
+    height: 13rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-fluid {
+    margin-top: 2rem;
+  }
+  .card {
+    height: 13rem;
+  }
+}

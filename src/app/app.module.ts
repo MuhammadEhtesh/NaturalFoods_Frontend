@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { PakCititesComponent } from './Components/pak-citites/pak-citites.component';
 import { TestimonialComponent } from './Components/testimonial/testimonial.component';
@@ -13,6 +12,10 @@ import { MilkCategoriesComponent } from './Components/milk-categories/milk-categ
 import { DailyDairyWorkComponent } from './Components/daily-dairy-work/daily-dairy-work.component';
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
 import { LandingPageBannerComponent } from './Components/landing-page-banner/landing-page-banner.component';
+import { SignupOptionsComponent } from './Components/signup-options/signup-options.component';
+import { CustomerSignupComponent } from './Components/customer-signup/customer-signup.component';
+import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-signup.component';
+import { SigninComponent } from './Components/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +29,12 @@ import { LandingPageBannerComponent } from './Components/landing-page-banner/lan
     MilkCategoriesComponent,
     StrongboneFillerComponent,
     LandingPageBannerComponent,
+    SignupOptionsComponent,
+    CustomerSignupComponent,
+    DairymanSignupComponent,
+    SigninComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
