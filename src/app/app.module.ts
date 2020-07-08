@@ -14,6 +14,7 @@ import { StrongboneFillerComponent } from './Components/strongbone-filler/strong
 import { LandingPageBannerComponent } from './Components/landing-page-banner/landing-page-banner.component';
 import { SignupOptionsComponent } from './Components/signup-options/signup-options.component';
 import { CustomerSignupComponent } from './Components/customer-signup/customer-signup.component';
+import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-signup.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CustomerSignupComponent } from './Components/customer-signup/customer-s
     LandingPageBannerComponent,
     SignupOptionsComponent,
     CustomerSignupComponent,
+    DairymanSignupComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
