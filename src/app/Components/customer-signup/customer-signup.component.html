@@ -1,1 +1,78 @@
-<p>customer-signup works!</p>
+<div class="container-fluid h-100">
+  <div class="row align-items-center justify-content-center h-100">
+    <div class="col-lg-8">
+      <form class="border border-light p-5">
+        <p class="h4 mb-4 text-center">
+          Sign Up<i class="fas fa-user-plus ml-1"></i>
+        </p>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
+            <input type="text" class="form-control" placeholder="First Name" />
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
+            <input type="text" class="form-control" placeholder="Last Name" />
+          </div>
+        </div>
+        <input type="email" placeholder="Email" class="form-control mb-4" />
+        <div class="mb-4">
+          <input type="text" placeholder="CNIC" class="form-control" />
+          <small class="text-muted">Enter CNIC to check eligibility</small>
+        </div>
+        <input
+          type="text"
+          class="form-control mb-4"
+          placeholder="Phone Number"
+        />
+        <input
+          type="password"
+          class="form-control mb-4"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          class="form-control mb-4"
+          placeholder="Confirm Password"
+        />
+
+        <select name="" id="paymentmode" class="form-select mb-4">
+          <option selected>Select Payment Mode here</option>
+          <option value="">Daily</option>
+          <option value="">Monthly</option>
+        </select>
+        <label class="form-label text-muted"><strong>Address</strong></label>
+        <input
+          type="text"
+          class="form-control mb-4"
+          placeholder="Street Address"
+        />
+        <input
+          type="text"
+          class="form-control mb-4"
+          placeholder="Street Address Line 2"
+        />
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <input type="text" class="form-control mb-4" placeholder="City" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <input
+              type="text"
+              class="form-control mb-4"
+              placeholder="State/Province"
+            />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <input
+              type="text"
+              class="form-control mb-4"
+              placeholder="Zipcode"
+            />
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
