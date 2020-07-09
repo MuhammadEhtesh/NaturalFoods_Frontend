@@ -1,0 +1,9 @@
+.footersection {
+  background-color: lightgrey;
+  padding: 3rem;
+}
+
+.socialLinks:hover {
+  cursor: pointer;
+  color: cornflowerblue;
+}
