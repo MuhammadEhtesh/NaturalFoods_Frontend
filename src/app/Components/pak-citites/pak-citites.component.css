@@ -1,22 +1,50 @@
+.card-title {
+  position: absolute;
+  margin-top: -58px;
+  margin-left: 54px;
+  color: white;
+}
+
+.card {
+  border-radius: 2.5rem;
+}
+
+.card-img-top {
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .card {
-    height: 24.5rem;
+    height: 21rem;
     width: 20rem;
     margin: auto;
   }
   .card-img-top {
     height: 21rem;
   }
+
+  .card-body {
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .card {
+    height: 21rem;
     margin: auto;
     width: 15rem;
   }
 
   .card-img-top {
     height: 21rem;
+  }
+
+  .card-body {
+    padding: 0;
   }
 }
 
