@@ -20,8 +20,5 @@
 }
 
 #map__button {
-  border-radius: 0.5rem;
-}
-.btn-outline-success:hover {
-  background-color: cornflowerblue !important;
+  border-radius: 0.3rem;
 }
