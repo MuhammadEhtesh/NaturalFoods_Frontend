@@ -11,11 +11,17 @@ import { ContactUsComponent } from './Components/contact-us/contact-us.component
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'signupfor', component: SignupOptionsComponent },
-  { path: 'customer-signup', component: CustomerSignupComponent },
-  { path: 'dairyman-signup', component: DairymanSignupComponent },
+  {
+    path: 'customer-signup',
+    component: CustomerSignupComponent,
+  },
+  {
+    path: 'dairyman-signup',
+    component: DairymanSignupComponent,
+  },
   { path: 'signin', component: SigninComponent },
   { path: 'contact-us', component: ContactUsComponent },
+  { path: 'signupfor', component: SignupOptionsComponent },
 ];
 
 @NgModule({
