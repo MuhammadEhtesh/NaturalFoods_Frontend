@@ -25,8 +25,6 @@ export class SigninComponent implements OnInit {
       this.form.value.emailPhone,
       this.form.value.password
     );
-    this.signinService.onSignIn(signIn).subscribe((response) => {
-      console.log(response);
-    });
+    this.signinService.onSignIn(signIn);
   }
 }
