@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SignIn } from '../../models/signin';
-import { SigninService } from 'src/app/Services/signin.service';
+import { SigninService } from 'src/app/Services/Auth.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
