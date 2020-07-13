@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { SignupService } from 'src/app/Services/Signup.service';
 
 @Component({
   selector: 'app-dairyman-signup',
@@ -7,8 +8,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./dairyman-signup.component.css'],
 })
 export class DairymanSignupComponent implements OnInit {
+  constructor(private signUpService: SignupService) {}
+
   form: FormGroup;
-  constructor() {}
 
   ngOnInit(): void {
     this.form = new FormGroup({
