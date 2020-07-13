@@ -2,7 +2,6 @@ import { SignIn } from '../models/signin';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as moment from 'moment';
-import { shareReplay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -13,7 +12,7 @@ export class SigninService {
 
   onSignIn(signIn: SignIn) {
     return this.http
-      .post('http://localhost:8080/auth/login', signIn)
+      .post('https://naturalfoods-backend.herokuapp.com/auth/login', signIn)
       .subscribe((res) => {
         this.setSession(res);
       });
