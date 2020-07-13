@@ -23,5 +23,11 @@ export class DairymanSignupComponent implements OnInit {
     });
   }
 
-  OnSubmitSignUp() {}
+  OnSubmitSignUp() {
+    this.signUpService
+      .onDairymanSignUp(this.form.value)
+      .subscribe((register) => {
+        console.log(register);
+      });
+  }
 }
