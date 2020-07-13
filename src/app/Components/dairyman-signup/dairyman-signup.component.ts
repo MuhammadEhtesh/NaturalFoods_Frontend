@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SignupService } from 'src/app/Services/Signup.service';
+import { DairymanSignup } from 'src/app/models/DairymanSignup';
 
 @Component({
   selector: 'app-dairyman-signup',
@@ -23,5 +24,16 @@ export class DairymanSignupComponent implements OnInit {
     });
   }
 
-  OnSubmitSignUp() {}
+  OnSubmitSignUp() {
+    const formvalue = this.form.value;
+    const dairymanSignup = new DairymanSignup(
+      formvalue.firstname,
+      formvalue.lastname,
+      formvalue.email,
+      formvalue.password,
+      formvalue.confirmpassword,
+      formvalue.phone
+    );
+    this.signUpService.onDairymanSignup(dairymanSignup);
+  }
 }
