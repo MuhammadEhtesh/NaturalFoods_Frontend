@@ -1,14 +1,30 @@
 <div class="container-fluid h-100">
   <div class="row align-items-center justify-content-center h-100">
     <div class="col-lg-8">
-      <form [formGroup]="form" class="text-center border border-light p-5">
+      <form
+        [formGroup]="form"
+        (ngSubmit)="OnSubmitSignUp()"
+        class="text-center border border-light p-5"
+      >
         <p class="h4 mb-4">Sign Up<i class="fas fa-user-plus ml-1"></i></p>
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
-            <input type="text" class="form-control" placeholder="First Name" />
+            <input
+              name="firstname"
+              type="text"
+              class="form-control"
+              placeholder="First Name"
+              formControlName="firstname"
+            />
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
-            <input type="text" class="form-control" placeholder="Last Name" />
+            <input
+              name="lastname"
+              type="text"
+              class="form-control"
+              placeholder="Last Name"
+              formControlName="lastname"
+            />
           </div>
         </div>
         <input
@@ -16,26 +32,30 @@
           name="email"
           placeholder="Email"
           class="form-control mb-4"
+          formControlName="email"
         />
         <input
           name="password"
           type="password"
           class="form-control mb-4"
           placeholder="Password"
+          formControlName="password"
         />
         <input
           name="confirmpassword"
           type="password"
           class="form-control mb-4"
           placeholder="Confirm Password"
+          formControlName="confirmpassword"
         />
         <input
           name="phone"
           type="text"
           class="form-control mb-4"
           placeholder="Phone Number"
+          formControlName="phone"
         />
-        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
       </form>
     </div>
   </div>
