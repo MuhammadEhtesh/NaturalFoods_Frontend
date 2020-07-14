@@ -26,6 +26,9 @@ export class DairymanSignupComponent implements OnInit {
   }
 
   OnSubmitSignUp() {
+    if (!this.form.valid) {
+      return;
+    }
     const formvalue = this.form.value;
     const dairymanSignup = new DairymanSignup(
       formvalue.firstname,
