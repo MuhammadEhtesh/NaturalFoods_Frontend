@@ -17,6 +17,7 @@ export class DairymanSignupComponent implements OnInit {
     this.form = new FormGroup({
       firstname: new FormControl('', Validators.required),
       lastname: new FormControl('', Validators.required),
+      cnic: new FormControl('', Validators.required),
       email: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required),
       confirmpassword: new FormControl('', Validators.required),
