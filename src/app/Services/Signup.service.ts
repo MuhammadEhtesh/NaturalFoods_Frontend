@@ -10,10 +10,7 @@ export class SignupService {
 
   onDairymanSignup(dairymanSignup: DairymanSignup) {
     return this.http
-      .post(
-        'https://naturalfoods-backend.herokuapp.com/auth/register',
-        dairymanSignup
-      )
+      .post('http://localhost:8080/auth/register', dairymanSignup)
       .subscribe((res) => {
         console.log(res);
       });

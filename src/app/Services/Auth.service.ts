@@ -12,7 +12,7 @@ export class SigninService {
 
   onSignIn(signIn: SignIn) {
     return this.http
-      .post('https://naturalfoods-backend.herokuapp.com/auth/login', signIn)
+      .post('http://localhost:8080/auth/login', signIn)
       .subscribe((res) => {
         this.setSession(res);
       });
