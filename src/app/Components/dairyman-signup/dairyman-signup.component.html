@@ -8,6 +8,84 @@
       >
         <p class="h4 mb-4">Sign Up<i class="fas fa-user-plus ml-1"></i></p>
         <div class="row">
+          <div
+            *ngIf="
+              form.controls.firstname.invalid &&
+              (form.controls.firstname.dirty || form.controls.firstname.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.firstname.errors.required">
+              First Name is required!
+            </div>
+          </div>
+          <div
+            *ngIf="
+              form.controls.lastname.invalid &&
+              (form.controls.lastname.dirty || form.controls.lastname.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.lastname.errors.required">
+              Last name is required!
+            </div>
+          </div>
+          <div
+            *ngIf="
+              form.controls.cnic.invalid &&
+              (form.controls.cnic.dirty || form.controls.cnic.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.cnic.errors.required">
+              Email is required!
+            </div>
+          </div>
+          <div
+            *ngIf="
+              form.controls.email.invalid &&
+              (form.controls.email.dirty || form.controls.email.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.email.errors.required">
+              Email is required!
+            </div>
+          </div>
+          <div
+            *ngIf="
+              form.controls.password.invalid &&
+              (form.controls.password.dirty || form.controls.password.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.password.errors.required">
+              Password is required!
+            </div>
+          </div>
+          <div
+            *ngIf="
+              form.controls.confirmpassword.invalid &&
+              (form.controls.confirmpassword.dirty ||
+                form.controls.confirmpassword.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.confirmpassword.errors.required">
+              Enter Password to match!
+            </div>
+          </div>
+          <div
+            *ngIf="
+              form.controls.phone.invalid &&
+              (form.controls.phone.dirty || form.controls.phone.touched)
+            "
+            class="text-danger text-left"
+          >
+            <div *ngIf="form.controls.phone.errors.required">
+              Phone is required!
+            </div>
+          </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-4">
             <input
               name="firstname"
