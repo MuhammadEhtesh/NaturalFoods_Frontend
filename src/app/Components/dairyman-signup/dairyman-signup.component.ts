@@ -33,11 +33,14 @@ export class DairymanSignupComponent implements OnInit {
     const dairymanSignup = new DairymanSignup(
       formvalue.firstname,
       formvalue.lastname,
+      formvalue.cnic,
       formvalue.email,
       formvalue.password,
       formvalue.confirmpassword,
       formvalue.phone
     );
-    this.signUpService.onDairymanSignup(dairymanSignup);
+    this.signUpService.onDairymanSignup(dairymanSignup).subscribe((res) => {
+      console.log(res);
+    });
   }
 }
