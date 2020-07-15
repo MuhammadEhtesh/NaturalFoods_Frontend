@@ -11,7 +11,7 @@ export class SignupService {
 
   onDairymanSignup(dairymanSignup: DairymanSignup): Observable<any> {
     return this.http.post(
-      'http://localhost:8080/auth/register',
+      'https://naturalfoods-backend.herokuapp.com/auth/register',
       dairymanSignup
     );
   }
