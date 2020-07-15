@@ -9,6 +9,16 @@
         <p class="h4 mb-4">Sign Up<i class="fas fa-user-plus ml-1"></i></p>
         <div class="row">
           <div
+            *ngIf="signupSuccessful"
+            class="alert alert-success"
+            role="alert"
+          >
+            SignUp Successful. Please
+            <strong
+              ><a routerLink="/signin" class="text-success">Login</a></strong
+            >.
+          </div>
+          <div
             *ngIf="
               form.controls.firstname.invalid &&
               (form.controls.firstname.dirty || form.controls.firstname.touched)

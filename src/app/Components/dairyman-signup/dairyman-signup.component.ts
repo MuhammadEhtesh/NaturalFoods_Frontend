@@ -12,6 +12,7 @@ export class DairymanSignupComponent implements OnInit {
   constructor(private signUpService: SignupService) {}
 
   form: FormGroup;
+  signupSuccessful: boolean = false;
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -40,7 +41,8 @@ export class DairymanSignupComponent implements OnInit {
       formvalue.phone
     );
     this.signUpService.onDairymanSignup(dairymanSignup).subscribe((res) => {
-      console.log(res);
+      this.form.reset();
+      this.signupSuccessful = true;
     });
   }
 }
