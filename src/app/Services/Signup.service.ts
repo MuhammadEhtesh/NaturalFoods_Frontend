@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DairymanSignup } from '../models/DairymanSignup';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,14 +9,10 @@ import { DairymanSignup } from '../models/DairymanSignup';
 export class SignupService {
   constructor(private http: HttpClient) {}
 
-  onDairymanSignup(dairymanSignup: DairymanSignup) {
-    return this.http
-      .post(
-        'https://naturalfoods-backend.herokuapp.com/auth/register',
-        dairymanSignup
-      )
-      .subscribe((res) => {
-        console.log(res);
-      });
+  onDairymanSignup(dairymanSignup: DairymanSignup): Observable<any> {
+    return this.http.post(
+      'https://naturalfoods-backend.herokuapp.com/auth/register',
+      dairymanSignup
+    );
   }
 }

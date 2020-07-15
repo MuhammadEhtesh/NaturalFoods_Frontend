@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -20,6 +20,7 @@ import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-s
 import { DailyDairyWorkComponent } from './Components/daily-dairy-work/daily-dairy-work.component';
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
 import { LandingPageBannerComponent } from './Components/landing-page-banner/landing-page-banner.component';
+import { HttpErrorInterceptor } from './Error-Handler/http-error.interceptor';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,13 @@ import { LandingPageBannerComponent } from './Components/landing-page-banner/lan
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpErrorInterceptor,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

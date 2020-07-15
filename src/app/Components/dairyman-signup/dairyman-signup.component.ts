@@ -12,11 +12,13 @@ export class DairymanSignupComponent implements OnInit {
   constructor(private signUpService: SignupService) {}
 
   form: FormGroup;
+  signupSuccessful: boolean = false;
 
   ngOnInit(): void {
     this.form = new FormGroup({
       firstname: new FormControl('', Validators.required),
       lastname: new FormControl('', Validators.required),
+      cnic: new FormControl('', Validators.required),
       email: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required),
       confirmpassword: new FormControl('', Validators.required),
@@ -25,15 +27,22 @@ export class DairymanSignupComponent implements OnInit {
   }
 
   OnSubmitSignUp() {
+    if (!this.form.valid) {
+      return;
+    }
     const formvalue = this.form.value;
     const dairymanSignup = new DairymanSignup(
       formvalue.firstname,
       formvalue.lastname,
+      formvalue.cnic,
       formvalue.email,
       formvalue.password,
       formvalue.confirmpassword,
       formvalue.phone
     );
-    this.signUpService.onDairymanSignup(dairymanSignup);
+    this.signUpService.onDairymanSignup(dairymanSignup).subscribe((res) => {
+      this.form.reset();
+      this.signupSuccessful = true;
+    });
   }
 }

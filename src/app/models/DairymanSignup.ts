@@ -1,6 +1,7 @@
 export class DairymanSignup {
   firstname: string;
   lastname: string;
+  cnic: string;
   email: string;
   password: string;
   confirmpassword: string;
@@ -9,6 +10,7 @@ export class DairymanSignup {
   constructor(
     firstname: string,
     lastname: string,
+    cnic: string,
     email: string,
     password: string,
     confirmpassword: string,
@@ -16,6 +18,7 @@ export class DairymanSignup {
   ) {
     this.firstname = firstname;
     this.lastname = lastname;
+    this.cnic = cnic;
     this.email = email;
     this.password = password;
     this.confirmpassword = confirmpassword;
