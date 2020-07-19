@@ -10,6 +10,7 @@ import { AboutComponent } from './Components/about/about.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SigninComponent } from './Components/signin/signin.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { HttpErrorInterceptor } from './interceptor/http-error.interceptor';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { PakCititesComponent } from './Components/pak-citites/pak-citites.component';
 import { TestimonialComponent } from './Components/testimonial/testimonial.component';
@@ -20,7 +21,7 @@ import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-s
 import { DailyDairyWorkComponent } from './Components/daily-dairy-work/daily-dairy-work.component';
 import { StrongboneFillerComponent } from './Components/strongbone-filler/strongbone-filler.component';
 import { LandingPageBannerComponent } from './Components/landing-page-banner/landing-page-banner.component';
-import { HttpErrorInterceptor } from './Error-Handler/http-error.interceptor';
+import { RequestTokenInterceptor } from './interceptor/request-token.interceptor';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,11 @@ import { HttpErrorInterceptor } from './Error-Handler/http-error.interceptor';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: HttpErrorInterceptor,
+      multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestTokenInterceptor,
       multi: true,
     },
   ],
