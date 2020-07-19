@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SignIn } from '../../models/signin';
-import { SigninService } from 'src/app/Services/Auth.service';
+import { AuthService } from 'src/app/Services/Auth.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -11,7 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class SigninComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private signinService: SigninService) {}
+  constructor(private authService: AuthService) {}
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -20,11 +20,11 @@ export class SigninComponent implements OnInit {
     });
   }
 
-  onSaveProduct() {
+  onSignin() {
     const signIn = new SignIn(
       this.form.value.emailPhone,
       this.form.value.password
     );
-    this.signinService.onSignIn(signIn);
+    this.authService.onSignIn(signIn);
   }
 }

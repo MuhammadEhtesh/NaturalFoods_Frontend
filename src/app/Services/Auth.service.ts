@@ -2,23 +2,32 @@ import { SignIn } from '../models/signin';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as moment from 'moment';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
-export class SigninService {
+export class AuthService {
+  user: any;
   loggedInUser: Object;
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   onSignIn(signIn: SignIn) {
+    let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/';
     return this.http
-      .post('https://naturalfoods-backend.herokuapp.com/auth/login', signIn)
+      .post('http://localhost:8080/auth/login', signIn)
       .subscribe((res) => {
         this.setSession(res);
+        this.router.navigateByUrl(returnUrl);
       });
   }
 
   private setSession(authResult: any) {
+    this.user = authResult.user;
     const expiresAt = moment().add(authResult.expiresIn, 'second');
     localStorage.setItem('token', authResult.token);
     localStorage.setItem('expires_at', JSON.stringify(expiresAt.valueOf()));

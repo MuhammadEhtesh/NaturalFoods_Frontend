@@ -7,6 +7,7 @@ import { CustomerSignupComponent } from './Components/customer-signup/customer-s
 import { DairymanSignupComponent } from './Components/dairyman-signup/dairyman-signup.component';
 import { SigninComponent } from './Components/signin/signin.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { AuthGuard } from './Guards/auth-guard.service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +21,11 @@ const routes: Routes = [
     component: DairymanSignupComponent,
   },
   { path: 'signin', component: SigninComponent },
-  { path: 'contact-us', component: ContactUsComponent },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'signupfor', component: SignupOptionsComponent },
 ];
 
